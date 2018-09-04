@@ -14,6 +14,7 @@
                              [lein-kibit "0.1.6"]
                              [jonase/eastwood "0.2.8"]
                              [venantius/ultra "0.5.2"]]
-                   :dependencies [[org.clojure/clojure "1.9.0"]]
+                   :dependencies [[org.clojure/clojure "1.9.0"]
+                                  [camdez/honeybadger "0.4.1"]]
                    :source-paths ["src" "dev/src"]}
              :test {:dependencies [[org.clojure/clojure "1.9.0"]]}})
