@@ -30,9 +30,9 @@ Add following configuration into project's config:
 {:duct.logger.honeybadger/timbre
  {:config {:api-key "YOUR-SECRET-KEY"
            :env :development}}
- :options {:min-level :warn}
+  :options {:min-level :warn}
 
  :duct.logger/timbre
- :appenders {:duct.logger.honeybadger/timbre #ig/ref :duct.logger.honeybadger/timbre
-             :duct.logger.timbre/brief #ig/ref :duct.logger.timbre/brief}}
+ {:appenders {:duct.logger.honeybadger/timbre #ig/ref :duct.logger.honeybadger/timbre
+              :duct.logger.timbre/brief #ig/ref :duct.logger.timbre/brief}}}
 ```
