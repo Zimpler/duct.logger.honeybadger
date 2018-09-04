@@ -18,7 +18,7 @@ Leiningen/Boot
 To install, add the following to you project `:dependencies`:
 
 ```clojure
-[duct.logger.honeybadger "0.0.0"]
+[duct.logger.honeybadger "0.1.0"]
 ```
 
 Documentation
