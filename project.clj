@@ -1,4 +1,4 @@
-(defproject duct.logger.honeybadger "0.1.0"
+(defproject duct.logger.honeybadger "0.2.0"
   :description "A Timbre appender that sends log events into Honeybadger for Duct framework"
   :url "https://github.com/Zimpler/duct.logger.honeybadger"
   :license {:name "MIT License"
