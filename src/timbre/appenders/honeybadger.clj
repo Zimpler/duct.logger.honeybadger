@@ -6,6 +6,7 @@
   "It return a configuration for an appender composed form a given maps:
    - `config` a Honeybadger configuration e.g.: {:api-key 1234, :env :development}
    - `options` an options for a Timbre appender (for a whole list of options see Timbre's documentation)
+     https://github.com/ptaoussanis/timbre#configuration
      - `event-fn` can be used to modify the raw event before sending it to Honeybadger
      - `min-level` a level keyword, or nil (=> no minimum level), default `:warn`
      - `enabled?` toggles an appender, default `true`
@@ -20,4 +21,4 @@
           :output-fn :inherit
           :fn (fn [{:keys [level output_]}]
                 (hb/notify config (-> output_ force event-fn) {:tags [level]}))}
-         (select-keys options [:enabled? :async? :min-level :rate-limit :output-fn])))
+         options))
